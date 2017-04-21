@@ -11,10 +11,13 @@
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
 
+;; change font size
+(set-face-attribute 'default nil :font "Monaco-16" )
+
 ;; set the position and size of the frame
 (when window-system
   (set-frame-position (selected-frame) 500 0)
-  (set-frame-size (selected-frame) 200 100))
+  (set-frame-size (selected-frame) 190 60))
 
 ;; constants
 (defconst *enabled-spell-check* t)
@@ -35,6 +38,11 @@
 (require 'init-elpa)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; local setup
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'init-local)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; allow access from emacsclient
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'server)
@@ -47,4 +55,3 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
-
