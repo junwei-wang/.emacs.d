@@ -8,6 +8,9 @@
 ;; we put all our elisp scripts under fold "lisp"
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+;; fill column width
+(setq-default fill-column 100)
+
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
 
@@ -33,9 +36,16 @@
 ;; benchmaring for loading
 (require 'init-benchmarking)
 
+;; add utilities
+(require 'init-utils)
+(require 'init-edit)
+
 ;; install missing package
 (package-initialize)
 (require 'init-elpa)
+
+(require 'init-flyspell)
+(require 'init-auctex)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup
