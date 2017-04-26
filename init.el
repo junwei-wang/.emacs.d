@@ -17,11 +17,6 @@
 ;; change font size
 (set-face-attribute 'default nil :font "Monaco-16" )
 
-;; set the position and size of the frame
-(when window-system
-  (set-frame-position (selected-frame) 500 0)
-  (set-frame-size (selected-frame) 190 60))
-
 ;; constants
 (defconst *enabled-spell-check* t)
 (defconst *is-a-mac* (eq system-type 'darwin))

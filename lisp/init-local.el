@@ -1,3 +1,8 @@
+;; set the position and size of the frame
+(when window-system
+  (set-frame-position (selected-frame) 500 0)
+  (set-frame-size (selected-frame) 190 60))
+
 ;; always set linum-mode
 (global-linum-mode 1)
 
