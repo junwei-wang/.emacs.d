@@ -39,8 +39,13 @@
 (package-initialize)
 (require 'init-elpa)
 
-(require 'init-flyspell)
 (require 'init-auctex)
+(require 'init-auto-complete)
+(require 'init-ibuffer)
+(require 'init-dired)
+(require 'init-flyspell)
+(require 'init-smex)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup
