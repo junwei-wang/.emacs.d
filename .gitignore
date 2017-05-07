@@ -15,3 +15,7 @@ places
 
 # elpa files
 elpa-*
+
+# plugin cache files
+.smex-items
+ac-comphist.dat
