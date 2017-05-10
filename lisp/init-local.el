@@ -21,4 +21,7 @@
 )
 (global-set-key "\C-cd" 'duplicate-line)
 
+;; find file at point
+(global-set-key (kbd "C-x f") 'find-file-at-point)
+
 (provide 'init-local)
