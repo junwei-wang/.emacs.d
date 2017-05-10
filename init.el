@@ -41,12 +41,12 @@
 
 (require 'init-auctex)
 (require 'init-auto-complete)
-(require 'init-ibuffer)
-(require 'init-ivy)
 (require 'init-dired)
 (require 'init-flyspell)
+(require 'init-ibuffer)
+(require 'init-ivy)
+(require 'init-octave)
 (require 'init-smex)
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup
