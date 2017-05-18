@@ -19,3 +19,5 @@ elpa-*
 # plugin cache files
 .smex-items
 ac-comphist.dat
+
+.historian
