@@ -43,6 +43,7 @@
 (require 'init-auto-complete)
 (require 'init-dired)
 (require 'init-flyspell)
+(require 'init-git)
 (require 'init-ibuffer)
 (require 'init-ivy)
 (require 'init-octave)
