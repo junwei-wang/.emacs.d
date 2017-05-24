@@ -5,8 +5,10 @@
 (require-package 'auctex)
 (require 'tex)
 
+;; parsing the document
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
+;; set master document nil
 (setq-default TeX-master nil)
 
 ;; add flyspell mode
