@@ -46,6 +46,7 @@
 (require 'init-git)
 (require 'init-ibuffer)
 (require 'init-ivy)
+(require 'init-markdown)
 (require 'init-octave)
 (require 'init-sage)
 (require 'init-smex)

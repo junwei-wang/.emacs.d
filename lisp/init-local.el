@@ -1,7 +1,7 @@
 ;; set the position and size of the frame
 (when window-system
-  (set-frame-position (selected-frame) 500 0)
-  (set-frame-size (selected-frame) 190 60))
+  (set-frame-position (selected-frame) 00 0)
+  (set-frame-size (selected-frame) 165 42))
 
 ;; always set linum-mode
 (global-linum-mode 1)
@@ -23,5 +23,19 @@
 
 ;; find file at point
 (global-set-key (kbd "C-x f") 'find-file-at-point)
+
+;; Run SageMath by M-x run-sage instead of M-x sage-shell:run-sage
+(sage-shell:define-alias)
+
+;; Turn on eldoc-mode in Sage terminal and in Sage source files
+(add-hook 'sage-shell-mode-hook #'eldoc-mode)
+(add-hook 'sage-shell:sage-mode-hook #'eldoc-mode)
+
+;; If you have Sage 7.4 or later, uncomment the following line.
+(setq sage-shell:use-prompt-toolkit t)
+
+;; set tex path
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/"))  
+(setq exec-path (append exec-path '("/Library/TeX/texbin/")))
 
 (provide 'init-local)
