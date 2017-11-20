@@ -35,7 +35,7 @@
 (setq sage-shell:use-prompt-toolkit t)
 
 ;; set tex path
-(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/"))  
-(setq exec-path (append exec-path '("/Library/TeX/texbin/")))
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ":/usr/local/bin/"))  
+(setq exec-path (append exec-path '("/Library/TeX/texbin/" "/usr/local/bin/")))
 
 (provide 'init-local)

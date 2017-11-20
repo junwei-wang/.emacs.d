@@ -9,7 +9,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; fill column width
-(setq-default fill-column 100)
+(setq-default fill-column 80)
 
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
@@ -48,12 +48,13 @@
 (require 'init-ivy)
 (require 'init-markdown)
 (require 'init-octave)
+(require 'init-python)
 (require 'init-sage)
 (require 'init-smex)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;
 (require 'init-local)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -69,3 +70,5 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
+(put 'set-goal-column 'disabled nil)
+
