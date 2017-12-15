@@ -11,5 +11,9 @@
   kept-old-versions 5    ; and how many of the old
   )
 
+;; auto delete trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+
 
 (provide 'init-edit)
