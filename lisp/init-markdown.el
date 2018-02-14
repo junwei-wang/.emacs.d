@@ -4,4 +4,13 @@
 
 (setq markdown-enable-math t)
 
+(mapc (lambda (mode)
+      (add-hook 'markdown-mode-hook mode))
+      (list 'auto-fill-mode
+	    #'turn-on-flyspell))
+
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (set-fill-column 120)))
+
 (provide 'init-markdown)

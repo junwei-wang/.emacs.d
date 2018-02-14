@@ -9,6 +9,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; fill column width
+;; buffer local variable
 (setq-default fill-column 80)
 
 ;; disable the welcome frame
@@ -71,4 +72,3 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 (put 'set-goal-column 'disabled nil)
-
