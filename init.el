@@ -11,6 +11,7 @@
 ;; fill column width
 ;; buffer local variable
 (setq-default fill-column 80)
+(require 'fill-column-indicator)
 
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
@@ -47,6 +48,7 @@
 (require 'init-git)
 (require 'init-ibuffer)
 (require 'init-ivy)
+(require 'init-json)
 (require 'init-markdown)
 (require 'init-octave)
 (require 'init-python)

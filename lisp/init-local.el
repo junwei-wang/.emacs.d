@@ -5,6 +5,7 @@
 
 ;; always set linum-mode
 (global-linum-mode 1)
+(set-face-foreground 'linum "yellow")
 
 ;; save the cursor place
 (save-place-mode 1)
@@ -35,7 +36,7 @@
 (setq sage-shell:use-prompt-toolkit t)
 
 ;; set tex path
-(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ":/usr/local/bin/"))  
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ":/usr/local/bin/"))
 (setq exec-path (append exec-path '("/Library/TeX/texbin/" "/usr/local/bin/")))
 
 (provide 'init-local)
