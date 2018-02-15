@@ -7,11 +7,17 @@
 ;; add the loading path
 ;; we put all our elisp scripts under fold "lisp"
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "emacswiki" user-emacs-directory))
 
 ;; fill column width
 ;; buffer local variable
 (setq-default fill-column 80)
 (require 'fill-column-indicator)
+(setq fci-rule-color "darkblue")
+;; enable fci-mode globally
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
+
 
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
