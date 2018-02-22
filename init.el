@@ -60,6 +60,7 @@
 (require 'init-python)
 (require 'init-sage)
 (require 'init-smex)
+(require 'init-theme)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup
