@@ -18,7 +18,7 @@
       (list 'auto-fill-mode
 	    #'turn-on-flyspell))
 
-(add-hook 'LaTeX-mode-hook (lambda () (set-fill-column 100)))
+(add-hook 'LaTeX-mode-hook (lambda () (set-fill-column 80)))
 
 ;; (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
