@@ -10,7 +10,6 @@
 	  '(lambda ()
 	     (linum-mode (if (or (equal major-mode 'doc-view-mode) (equal major-mode 'term-mode) (equal major-mode 'help-mode)) 0 1))))
 
-
 ;; save the cursor place
 (save-place-mode 1)
 

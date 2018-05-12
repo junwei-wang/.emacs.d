@@ -18,6 +18,8 @@
 (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
 (global-fci-mode 1)
 
+;;
+(setq eval-expression-debug-on-error t)
 
 ;; disable the welcome frame
 (setq inhibit-startup-screen t)
@@ -58,6 +60,7 @@
 (require 'init-markdown)
 (require 'init-octave)
 (require 'init-python)
+(require 'init-pdf)
 (require 'init-sage)
 (require 'init-smex)
 (require 'init-theme)

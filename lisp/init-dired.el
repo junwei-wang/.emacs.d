@@ -1,6 +1,8 @@
 ;; (require-package 'dired+)
 ;; (require-package 'dired-sort)
 
+(require-package 'guide-key)
+
 (setq-default diredp-hide-details-initially-flag nil
               dired-dwim-target t)
 
