@@ -8,8 +8,20 @@
 ;; parsing the document
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
+
 ;; set master document nil
 (setq-default TeX-master nil)
+
+;; turn options on
+(setq LaTeX-electric-left-right-brace t)
+(add-hook 'plain-TeX-mode-hook
+	  (lambda () (set (make-variable-buffer-local 'TeX-electric-math)
+			  (cons "$" "$"))))
+(add-hook 'LaTeX-mode-hook
+	  (lambda () (set (make-variable-buffer-local 'TeX-electric-math)
+;;			  (cons "\\(" "\\)"))))
+			  (cons "$" "$"))))
+
 
 ;; add flyspell mode
 ;; (add-hook 'LaTeX-mode-hook #'turn-on-flyspell)

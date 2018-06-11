@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; basic setup
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(when (version<= emacs-version "25")
+(when (version<= emacs-version "25.3")
   (error "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 ;; add the loading path
@@ -60,7 +60,6 @@
 (require 'init-markdown)
 (require 'init-octave)
 (require 'init-python)
-(require 'init-pdf)
 (require 'init-sage)
 (require 'init-smex)
 (require 'init-theme)
