@@ -42,4 +42,10 @@
 (setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ":/usr/local/bin/"))
 (setq exec-path (append exec-path '("/Library/TeX/texbin/" "/usr/local/bin/")))
 
+
+;; set env
+(setenv "LC_ALL" "en_US.UTF-8")
+(setenv "LANG" "en_US.UTF-8")
+
+
 (provide 'init-local)
