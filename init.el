@@ -23,7 +23,8 @@
 (setq inhibit-startup-screen t)
 
 ;; change font size
-(set-face-attribute 'default nil :font "Monaco-16" )
+(set-face-attribute 'default nil :font "Lucida Console-13" )
+(setq-default line-spacing 3)
 
 ;; constants
 (defconst *enabled-spell-check* t)
@@ -81,3 +82,4 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 (put 'set-goal-column 'disabled nil)
+(put 'scroll-left 'disabled nil)

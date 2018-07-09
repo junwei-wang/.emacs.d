@@ -36,7 +36,8 @@
 (setq sage-shell:use-prompt-toolkit t)
 
 ;; set tex path
-(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ":/usr/local/bin/"))
-(setq exec-path (append exec-path '("/Library/TeX/texbin/" "/usr/local/bin/")))
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/" ";/usr/local/bin/" ";C:\\Users\\junwei\\AppData\\Local\\Programs\\MiKTeX 2.9\\miktex\\bin\\x64" ";C:\msys64\\mingw64\\bin"))
+(setq exec-path (append exec-path '("/Library/TeX/texbin/" "/usr/local/bin/" "C:\\Users\\junwei\\AppData\\Local\\Programs\\MiKTeX 2.9\\miktex\\bin\\x64" "C:\\msys64\\mingw64\\bin")))
+
 
 (provide 'init-local)
