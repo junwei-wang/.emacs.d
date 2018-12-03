@@ -1,14 +1,8 @@
 ;; set the position and size of the frame
 (when window-system
   (set-frame-position (selected-frame) 00 0)
-  (set-frame-size (selected-frame) 165 42))
+  (set-frame-size (selected-frame) 165 65))
 
-;; always set linum-mode
-(global-linum-mode 1)
-(set-face-foreground 'linum "yellow")
-(add-hook 'after-change-major-mode-hook
-	  '(lambda ()
-	     (linum-mode (if (or (equal major-mode 'doc-view-mode) (equal major-mode 'term-mode) (equal major-mode 'help-mode)) 0 1))))
 
 ;; save the cursor place
 (save-place-mode 1)
