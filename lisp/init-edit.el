@@ -30,9 +30,15 @@
 	  '(lambda ()
 	     (linum-mode (if (or
 			      (equal major-mode 'doc-view-mode)
-			      (equal major-mode 'term-mode)
+			      (equal major-mode 'eshell-mode)
 			      (equal major-mode 'help-mode)
-			      (equal major-mode 'eshelle-mode)) 0 1))))
+			      (equal major-mode 'magit-popup-mode)
+			      (equal major-mode 'magit-revision-mode)
+			      (equal major-mode 'magit-status-mode)
+			      (equal major-mode 'term-mode)
+			      (equal major-mode 'TeX-output-mode)
+			      )
+			     0 1))))
 
 
 (provide 'init-edit)
