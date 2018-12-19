@@ -15,6 +15,7 @@ places
 
 # elpa files
 elpa-*
+elpa/*
 
 # plugin cache files
 .smex-items
