@@ -83,3 +83,7 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 (put 'set-goal-column 'disabled nil)
+
+
+;;; load Org todo tasks
+(find-file "~/Dropbox/org/todo.org")

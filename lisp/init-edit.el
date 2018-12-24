@@ -32,6 +32,7 @@
 			      (equal major-mode 'doc-view-mode)
 			      (equal major-mode 'eshell-mode)
 			      (equal major-mode 'help-mode)
+			      (equal major-mode 'magit-log-mode)
 			      (equal major-mode 'magit-popup-mode)
 			      (equal major-mode 'magit-revision-mode)
 			      (equal major-mode 'magit-status-mode)
