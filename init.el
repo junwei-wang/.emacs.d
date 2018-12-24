@@ -8,6 +8,7 @@
 ;; we put all our elisp scripts under fold "lisp"
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "emacswiki" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/llvm" user-emacs-directory))
 
 ;; fill column width
 ;; buffer local variable
@@ -63,6 +64,8 @@
 (require 'init-sage)
 (require 'init-smex)
 (require 'init-theme)
+
+(require 'llvm-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; local setup

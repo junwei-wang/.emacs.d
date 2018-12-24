@@ -10,5 +10,8 @@
   (setq-default dimmer-fraction 0.5)
   (add-hook 'after-init-hook 'dimmer-mode))
 
+;; (require-package 'dracula-theme)
+;; (load-theme 'dracula t)
+
 
 (provide 'init-theme)
