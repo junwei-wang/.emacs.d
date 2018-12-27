@@ -42,12 +42,19 @@
 
 ;; make latexmk available via C-c C-c
 ;; Note: SyncTeX is setup via ~/.latexmkrc (see below)
-(add-hook 'LaTeX-mode-hook (lambda ()
-  (push
-    '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
-      :help "Run latexmk on file")
-    TeX-command-list)))
-(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
+(require-package 'auctex-latexmk)
+(auctex-latexmk-setup)
+;; pass the -pdf flag when TeX-PDF-mode is active
+(setq auctex-latexmk-inherit-TeX-PDF-mode t)
+;; SyncTeX on
+'(TeX-source-correlate-mode t)
+
+;; (add-hook 'LaTeX-mode-hook (lambda ()
+;;   (push
+;;     '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+;;       :help "Run latexmk on file")
+;;     TeX-command-list)))
+;; (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
 
 ;; $pdflatex = 'pdflatex -interaction=nonstopmode -synctex=1 %O %S';
 ;; $pdf_previewer = 'open -a skim';
