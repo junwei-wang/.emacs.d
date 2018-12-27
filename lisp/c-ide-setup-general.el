@@ -1,6 +1,3 @@
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
 
@@ -22,6 +19,7 @@
                                (interactive)
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
+(setq compilation-scroll-output 'first-error)
 
 ;; setup GDB
 (setq

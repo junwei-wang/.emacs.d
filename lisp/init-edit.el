@@ -25,10 +25,11 @@
 
 ;; always set linum-mode
 (global-linum-mode 1)
-(set-face-foreground 'linum "yellow")
+;; (set-face-foreground 'linum "yellow")
 (add-hook 'after-change-major-mode-hook
 	  '(lambda ()
 	     (linum-mode (if (or
+			      (equal major-mode 'compilation-mode)
 			      (equal major-mode 'doc-view-mode)
 			      (equal major-mode 'eshell-mode)
 			      (equal major-mode 'help-mode)
