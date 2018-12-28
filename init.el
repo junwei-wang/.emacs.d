@@ -58,6 +58,7 @@
 (require 'init-git)
 (require 'init-ibuffer)
 (require 'init-ivy)
+(require 'init-org)
 (require 'init-json)
 (require 'init-markdown)
 (require 'init-octave)
