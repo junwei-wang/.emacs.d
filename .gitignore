@@ -24,4 +24,10 @@ ac-comphist.dat
 .historian
 recentf
 
-eshell/history
+# eshell
+eshell/
+
+# tutorial
+tutorial/
+
+custom.el
