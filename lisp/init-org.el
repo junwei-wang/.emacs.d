@@ -7,7 +7,7 @@
 (define-key global-map (kbd "C-c a") 'org-agenda)
 
 ;; Various preferences
-(setq org-log-done t
+(setq org-log-done 'time
       org-edit-timestamp-down-means-later t
       org-hide-emphasis-markers t
       org-catch-invisible-edits 'show
@@ -368,5 +368,7 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+
+(setq org-agenda-files (list "~/Dropbox/org"))
 
 (provide 'init-org)

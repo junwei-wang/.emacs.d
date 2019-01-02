@@ -1,6 +1,9 @@
 ;; python
+
+;; https://realpython.com/emacs-the-best-python-editor/
+
+(require-package 'elpy)
+(elpy-enable)
 (setq python-shell-completion-native-enable nil)
-(setq python-shell-interpreter "ipython3"
-      python-shell-interpreter-args "--simple-prompt -i")
 
 (provide 'init-python)
