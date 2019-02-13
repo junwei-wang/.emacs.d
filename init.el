@@ -52,7 +52,7 @@
 
 (require 'init-auctex)
 (require 'init-auto-complete)
-(require 'init-c-ide)
+;; (require 'init-c-ide)
 (require 'init-dired)
 (require 'init-flyspell)
 (require 'init-git)

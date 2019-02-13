@@ -132,7 +132,7 @@
     (use-package helm-projectile
       :init
       (helm-projectile-on)
-      (setq projectile-completion-system 'helm)
+      ;; (setq projectile-completion-system 'helm)
       (setq projectile-indexing-method 'alien))))
 
 (provide 'c-ide-setup-helm)
