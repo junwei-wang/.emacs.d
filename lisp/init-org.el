@@ -371,4 +371,9 @@ typical word processor."
 
 (setq org-agenda-files (list "~/Dropbox/org"))
 
+
+
+(add-hook 'org-mode-hook 'disable-org-mode-config-fn)
+
+
 (provide 'init-org)
