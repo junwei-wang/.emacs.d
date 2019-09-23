@@ -9,7 +9,7 @@
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 ;; auto add newline at the end of the file
-(setq require-final-newline "visit")
+(setq require-final-newline t)
 
 ;; change backup files
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))

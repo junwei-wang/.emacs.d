@@ -31,3 +31,8 @@ eshell/
 tutorial/
 
 custom.el
+
+ede-projects.el
+games
+projectile-bookmarks.eld
+semanticdb/
