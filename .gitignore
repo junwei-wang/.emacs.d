@@ -16,6 +16,7 @@ places
 # elpa files
 elpa-*
 elpa/*
+elpy/
 
 # plugin cache files
 .smex-items
@@ -35,4 +36,7 @@ custom.el
 ede-projects.el
 games
 projectile-bookmarks.eld
-semanticdb/
+semanticdb
+org-clock-save.el
+smex-items
+transient

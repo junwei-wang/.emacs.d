@@ -55,6 +55,7 @@
 ;; (require 'init-c-ide)
 (require 'init-dired)
 (require 'init-flyspell)
+(require 'init-fonts)
 (require 'init-git)
 (require 'init-ibuffer)
 (require 'init-ivy)
