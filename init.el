@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; basic setup
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(when (version<= emacs-version "25.3")
+(when (version<= emacs-version "26.2")
   (error "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 ;; add the loading path
@@ -47,13 +47,14 @@
 (require 'init-edit)
 
 ;; install missing package
-(package-initialize)
+;; (package-initialize)
 (require 'init-elpa)
 
 (require 'init-auctex)
 (require 'init-auto-complete)
 ;; (require 'init-c-ide)
 (require 'init-dired)
+(require 'init-emoji)
 (require 'init-flyspell)
 (require 'init-fonts)
 (require 'init-git)
@@ -92,4 +93,4 @@
 
 
 ;;; load Org todo tasks
-(find-file "~/Dropbox/org/todo.org")
+;; (find-file "~/Dropbox/org/todo.org")
