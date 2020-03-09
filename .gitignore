@@ -16,9 +16,11 @@ places
 # elpa files
 elpa-*
 elpa/*
+elpy/
 
 # plugin cache files
 .smex-items
+smex-items
 ac-comphist.dat
 
 .historian
@@ -36,3 +38,4 @@ ede-projects.el
 games
 projectile-bookmarks.eld
 semanticdb/
+transient/

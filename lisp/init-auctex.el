@@ -48,12 +48,12 @@
 ;; SyncTeX on
 '(TeX-source-correlate-mode t)
 
-;; (add-hook 'LaTeX-mode-hook (lambda ()
-;;   (push
-;;     '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
-;;       :help "Run latexmk on file")
-;;     TeX-command-list)))
-;; (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
+(add-hook 'LaTeX-mode-hook (lambda ()
+  (push
+    '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+      :help "Run latexmk on file")
+    TeX-command-list)))
+(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
 
 ;; $pdflatex = 'pdflatex -interaction=nonstopmode -synctex=1 %O %S';
 ;; $pdf_previewer = 'open -a skim';

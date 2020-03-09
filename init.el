@@ -54,6 +54,7 @@
 (require 'init-auto-complete)
 ;; (require 'init-c-ide)
 (require 'init-dired)
+(require 'init-dash)
 (require 'init-flyspell)
 (require 'init-git)
 (require 'init-ibuffer)
