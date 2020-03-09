@@ -69,6 +69,7 @@
 (require 'init-sage)
 (require 'init-smex)
 (require 'init-theme)
+(require 'init-yaml)
 
 (require 'llvm-mode)
 
