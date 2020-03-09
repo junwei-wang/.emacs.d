@@ -43,4 +43,12 @@
 			     0 1))))
 
 
+;; set todo
+(add-hook 'c-mode-hook
+	  (lambda () (font-lock-add-keywords nil '(("\\<\\(FIXME\\):" 1 font-lock-warning-face t)
+						   ("\\<\\(TODO\\):" 1 font-lock-warning-face t)))))
+(add-hook 'makefile-mode-hook
+	  (lambda () (font-lock-add-keywords nil '(("\\<\\(FIXME\\):" 1 font-lock-warning-face t)
+						   ("\\<\\(TODO\\):" 1 font-lock-warning-face t)))))
+
 (provide 'init-edit)
