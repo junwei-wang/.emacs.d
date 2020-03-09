@@ -1,6 +1,6 @@
 ;; set the position and size of the frame
 (when window-system
-  (set-frame-position (selected-frame) 00 0)
+  (set-frame-position (selected-frame) 0 0)
   (set-frame-size (selected-frame) 165 65))
 
 

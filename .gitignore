@@ -20,7 +20,6 @@ elpy/
 
 # plugin cache files
 .smex-items
-smex-items
 ac-comphist.dat
 
 .historian
@@ -37,5 +36,7 @@ custom.el
 ede-projects.el
 games
 projectile-bookmarks.eld
-semanticdb/
-transient/
+semanticdb
+org-clock-save.el
+smex-items
+transient
