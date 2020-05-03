@@ -50,7 +50,7 @@
 
 (add-hook 'LaTeX-mode-hook (lambda ()
   (push
-    '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+    '("latexmk" "latexmk -xelatex %s" TeX-run-TeX nil t
       :help "Run latexmk on file")
     TeX-command-list)))
 (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
