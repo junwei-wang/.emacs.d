@@ -1,5 +1,5 @@
-(require-package 'ample-theme)
 ;; load theme AMPLE
+;; (require-package 'ample-theme)
 ;; (load-theme 'ample t t)
 ;; (load-theme 'ample-flat t t)
 ;; (load-theme 'ample-light t t)
@@ -15,7 +15,15 @@
 ;; (load-theme 'dracula t)
 
 ;; load theme NIMBUS
-(require-package 'nimbus-theme)
-(load-theme 'nimbus t)
+;; (require-package 'nimbus-theme)
+;; (load-theme 'nimbus t)
+
+;; load theme Nord
+(require-package 'nord-theme)
+(load-theme 'nord t)
+
+;; status bar
+;; (require-package 'ergoemacs-status)
+;; (ergoemacs-status-mode)
 
 (provide 'init-theme)

@@ -52,7 +52,7 @@
 
 (require 'init-auctex)
 (require 'init-auto-complete)
-;; (require 'init-c-ide)
+(require 'init-c-ide)
 (require 'init-dired)
 (require 'init-dash)
 (require 'init-emoji)
@@ -91,8 +91,8 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
-(put 'set-goal-column 'disabled nil)
 
 
 ;;; load Org todo tasks
 ;; (find-file "~/Dropbox/org/todo.org")
+(put 'set-goal-column 'disabled nil)
