@@ -15,15 +15,9 @@
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
   ;; Official MELPA Mirror, in case necessary.
   ;;(add-to-list 'package-archives (cons "melpa-mirror" (concat proto "://www.mirrorservice.org/sites/melpa.org/packages/")) t)
-  (if (< emacs-major-version 24)
-      ;; For important compatibility libraries like cl-lib
-      (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))
-    (unless no-ssl
-      ;; Force SSL for GNU ELPA
-      (setcdr (assoc "gnu" package-archives) "https://elpa.gnu.org/packages/"))))
+  )
 
 ;;; On-demand installation of packages
-
 (require 'cl-lib)
 
 (defun require-package (package &optional min-version no-refresh)
@@ -80,6 +74,9 @@ locate PACKAGE."
 
 (require-package 'fullframe)
 (fullframe list-packages quit-window)
+
+(let ((package-check-signature nil))
+  (require-package 'gnu-elpa-keyring-update))
 
 (defun sanityinc/set-tabulated-list-column-width (col-name width)
   "Set any column with name COL-NAME to the given WIDTH."
